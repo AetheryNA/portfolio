@@ -1,0 +1,22 @@
+button,
+.button {
+  cursor: pointer;
+  transition: $basic-transition;
+  text-align: center;
+
+  &--primary {
+    background-color: $primary;
+
+    &:hover {
+      background-color: $primary_dark;
+    }
+  }
+
+  &--secondary {
+    background-color: $secondary;
+
+    &:hover {
+      background-color: $secondary_dark;
+    }
+  }
+}
