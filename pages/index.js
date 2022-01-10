@@ -1,5 +1,7 @@
 export default function Home() {
   return (
-    <h1> New Website time! </h1>
+    <div className="container">
+      <h1> New Website time! </h1>
+    </div>
   )
 }

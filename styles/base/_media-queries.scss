@@ -1,0 +1,30 @@
+// Media Queries
+@mixin media-xs {
+  @media (min-width: $xs) {
+    @content;
+  };
+};
+
+@mixin media-s {
+  @media (min-width: $s) {
+    @content;
+  };
+};
+
+@mixin media-md {
+  @media (min-width: $md) {
+    @content;
+  };
+};
+
+@mixin media-lg {
+  @media (min-width: $lg) {
+    @content;
+  };
+};
+
+@mixin media-xl {
+  @media (min-width: $xl) {
+    @content;
+  };
+};
