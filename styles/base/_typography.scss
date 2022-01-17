@@ -7,3 +7,15 @@ h1 {
     font-size: 38px;
   }
 }
+
+h3 {
+  font: {
+    family: $raleway;
+    size: 12px;
+    weight: $regular;
+  }
+
+  @include media-lg {
+    font-size: 16px;
+  }
+}
