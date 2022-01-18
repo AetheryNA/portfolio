@@ -10,10 +10,17 @@
       &:last-child {
         margin-right: 0;
       }
+
+      &:hover {
+        svg {
+          color: $primary;
+        }
+      }
     }
 
     svg {
       height: 20px;
+      transition: $basic-transition;
       width: 20px;
     }
   }
