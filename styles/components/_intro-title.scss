@@ -1,5 +1,7 @@
 .intro-title {
   h2 {
+    padding-bottom: 5px;
+
     &:before,
     &:after {
       background-color: $primary;
