@@ -8,6 +8,15 @@ h1 {
   }
 }
 
+h2 {
+  font-family: $raleway;
+  font-size: 14px;
+
+  @include media-lg {
+    font-size: 18px;
+  }
+}
+
 h3 {
   font: {
     family: $raleway;
