@@ -1,0 +1,37 @@
+.about-card {
+  img {
+    transition: $basic-transition;
+  }
+
+  &:hover {
+    img {
+      filter: blur(10px);
+    }
+
+    span {
+      border-radius: 8px;
+    }
+
+    .about-card__details {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__details {
+    transition: $basic-transition;
+
+    @include media-lg {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    p {
+      font-size: 18px;
+
+      @include media-lg {
+        font-size: 24px;
+      }
+    }
+  }
+}
