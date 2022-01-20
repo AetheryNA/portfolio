@@ -1,0 +1,25 @@
+.intro-title {
+  h2 {
+    padding-bottom: 5px;
+
+    &:before,
+    &:after {
+      background-color: $primary;
+      border-radius: 10px;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      position: absolute;
+    }
+
+    &:before {
+      left: 0;
+      width: 1%;
+    }
+
+    &:after {
+      right: 0;
+      width: 98%;
+    }
+  }
+}
