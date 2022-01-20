@@ -10,6 +10,13 @@ module.exports = {
       },
       white: '#fff',
     },
+    screens: {
+      'xs' : '640px',
+      's' : '768px',
+      'md' : '1024px',
+      'lg' : '1280px',
+      'xl' : '1600px',
+    },
     extend: {},
   },
   variants: {
