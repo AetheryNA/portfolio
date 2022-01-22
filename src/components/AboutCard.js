@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const AboutCard = () => {
   return (
-    <div className="about-card block relative mt-4 rounded-lg max-w-max cursor-pointer">
+    <div className="about-card block relative rounded-lg max-w-max w-full cursor-pointer">
       <Link href='/' >
         <>
           <Image src="/images/aboutme.jpg" width={400} height={485} className="rounded-lg object-cover" />

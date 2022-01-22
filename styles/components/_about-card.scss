@@ -3,6 +3,10 @@
     transition: $basic-transition;
   }
 
+  span {
+    border-radius: 8px;
+  }
+
   &:hover {
     img {
       filter: blur(10px);
