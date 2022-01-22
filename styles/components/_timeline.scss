@@ -1,0 +1,37 @@
+.timeline {
+  .swiper {
+    height: 485px;
+  }
+
+  &__slide {
+    img {
+      transition: $basic-transition;
+    }
+
+    span {
+      border-radius: 8px;
+    }
+
+    &:hover {
+      img {
+        filter: blur(10px);
+      }
+
+      span {
+        border-radius: 8px;
+      }
+    }
+
+    &--1 {
+      width: 735px;
+    }
+
+    &--2 {
+      width: 535px;
+    }
+
+    &--3 {
+      width: 800px;
+    }
+  }
+}
