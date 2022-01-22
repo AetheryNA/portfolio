@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <div className="container overflow-visible">
-        <IntroTitle title={'Hi! I build things on the Web.'} />
+        <IntroTitle title={'I build things on the Web.'} />
         <div className="portfolio-main__wrapper pt-4 grid">
           <AboutCard />
           <Timeline />
