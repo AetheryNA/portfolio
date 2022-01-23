@@ -1,6 +1,15 @@
 .about-card {
   img {
+    height: 295px !important;
     transition: $basic-transition;
+
+    @include media-xs {
+      height: 350px !important;
+    }
+
+    @include media-md {
+      height: 485px !important;
+    }
   }
 
   span {
