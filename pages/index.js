@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="container overflow-visible">
         <IntroTitle title={'I build things on the Web.'} />
-        <div className="portfolio-main__wrapper pt-4 md:grid hidden">
+        <div className="portfolio-main__wrapper pt-4 md:grid hidden relative">
           <AboutCard />
           <Timeline />
         </div>

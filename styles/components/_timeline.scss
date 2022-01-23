@@ -1,6 +1,36 @@
 .timeline {
   .swiper {
+    position: unset;
     height: 485px;
+  }
+
+  .swiper-pagination {
+    align-items: center;
+    bottom: -40px !important;
+    display: flex;
+    position: absolute;
+  }
+
+  .swiper-pagination-bullet {
+    padding: 2px 0;
+    background-color: $black-100;
+    border-radius: 6px;
+    height: 1px;
+    opacity: .1;
+    width: 16px;
+    transition: $basic-transition;
+
+    &-active {
+      background-color: $primary;
+      box-shadow: unset;
+      opacity: 1;
+      height: 6px;
+      width: 25px;
+    }
+  }
+
+  &__line {
+    top: -10px;
   }
 
   &__slide {
