@@ -37,6 +37,36 @@
   &__line {
     top: -28px;
     font-family: $raleway;
+
+    &:after {
+      position: absolute;
+      background-color: $primary;
+      content: '';
+      height: 2px;
+      top: 10px;
+      left: 0;
+      width: 90%;
+    }
+
+    &--first {
+      &:after {
+        left: 60px;
+      }
+    }
+
+    &--last {
+      max-width: 1085px;
+
+      &:after {
+        width: 93%;
+      }
+    }
+
+    span {
+      padding-left: 10px;
+      background-color: $white;
+      z-index: 10;
+    }
   }
 
   &__slide {
