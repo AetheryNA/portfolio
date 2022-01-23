@@ -4,7 +4,7 @@ import {MailIcon} from '@heroicons/react/solid'
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer hidden md:block">
       <div className="container">
         <div className="footer__wrapper flex flex-row max-w-max ml-auto">
           <h3 className="mr-16"> Reach out to me </h3>
