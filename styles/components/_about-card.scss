@@ -1,4 +1,6 @@
 .about-card {
+  grid-column-start: 1;
+
   img {
     height: 295px !important;
     transition: $basic-transition;

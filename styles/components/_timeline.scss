@@ -1,7 +1,12 @@
 .timeline {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
   .swiper {
+    padding-top: 128px;
+    height: 100%;
     position: unset;
-    height: 485px;
   }
 
   .swiper-pagination {
@@ -30,7 +35,8 @@
   }
 
   &__line {
-    top: -10px;
+    top: -28px;
+    font-family: $raleway;
   }
 
   &__slide {

@@ -8,13 +8,14 @@ export default function Home() {
   return (
     <>
       <div className="container overflow-visible">
-        <IntroTitle title={'I build things on the Web.'} />
         <div className="portfolio-main__wrapper pt-4 md:grid hidden relative">
+          <IntroTitle title={'I build things on the Web.'} />
           <AboutCard />
           <Timeline />
         </div>
       </div>
       <div className="portfolio-main__wrapper pt-4 md:hidden">
+        <IntroTitle title={'I build things on the Web.'} />
         <Slideshow />
       </div>
       <Footer />

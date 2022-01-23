@@ -1,5 +1,6 @@
 .portfolio-main {
   &__wrapper {
     grid-template-columns: 400px 1fr;
+    grid-template-rows: 128px 1fr;
   }
 }
