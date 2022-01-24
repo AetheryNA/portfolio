@@ -55,7 +55,11 @@
     }
 
     &--last {
-      max-width: 1085px;
+      max-width: 575px;
+
+      @include media-xl {
+        max-width: 700px;
+      }
 
       &:after {
         width: 93%;
@@ -70,8 +74,19 @@
   }
 
   &__slide {
+    height: 350px;
+
+    @include media-xl {
+      height: 485px;
+    }
+
     img {
+      height: 350px !important;
       transition: $basic-transition;
+
+      @include media-xl {
+        height: 485px !important;
+      }
     }
 
     span {
@@ -89,15 +104,37 @@
     }
 
     &--1 {
-      width: 735px;
+      width: 530px;
+
+      @include media-xl {
+        width: 735px;
+      }
     }
 
     &--2 {
-      width: 535px;
+      width: 385px;
+
+      @include media-xl {
+        width: 535px;
+      }
     }
 
     &--3 {
-      width: 800px;
+      width: 575px;
+
+      @include media-xl {
+        width: 800px;
+      }
+    }
+
+    &--4 {
+      img {
+        width: 575px !important;
+
+        @include media-xl {
+          width: 700px !important;
+        }
+      }
     }
   }
 }
