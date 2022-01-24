@@ -1,5 +1,10 @@
 .portfolio-main {
   &__wrapper {
-    grid-template-columns: 400px 1fr;
+    grid-template-rows: 128px 1fr;
+    grid-template-columns: 290px 1fr;
+
+    @include media-xl {
+      grid-template-columns: 400px 1fr;
+    }
   }
 }

@@ -1,11 +1,125 @@
 .timeline {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
   .swiper {
-    height: 485px;
+    padding-top: 128px;
+    height: 100%;
+    position: unset;
+  }
+
+  .swiper-pagination {
+    align-items: center;
+    bottom: -40px !important;
+    display: flex;
+    position: absolute;
+  }
+
+  .swiper-pagination-bullet {
+    padding: 2px 0;
+    background-color: $black-100;
+    border-radius: 6px;
+    height: 1px;
+    opacity: .1;
+    width: 16px;
+    transition: $basic-transition;
+
+    &-active {
+      background-color: $primary;
+      box-shadow: unset;
+      opacity: 1;
+      height: 6px;
+      width: 25px;
+    }
+  }
+
+  &__line {
+    top: -28px;
+    font-family: $raleway;
+
+    &:after {
+      position: absolute;
+      background-color: $primary;
+      content: '';
+      height: 2px;
+      top: 10px;
+      left: 0;
+      width: 90%;
+    }
+
+    &--first {
+      &:after {
+        left: 60px;
+        width: 85%;
+
+        @include media-xl {
+          width: 90%;
+        }
+      }
+    }
+
+    &--last {
+      max-width: 575px;
+
+      @include media-xl {
+        max-width: 700px;
+      }
+
+      &:after {
+        width: 93%;
+      }
+    }
+
+    span {
+      padding-left: 10px;
+      background-color: $white;
+      z-index: 10;
+    }
+  }
+
+  &__details {
+    opacity: 0;
+    transition: $basic-transition;
+    visibility: hidden;
+
+    h2 {
+      color: $white;
+      font-weight: $semi-bold;
+    }
+
+    svg {
+      margin-right: 15px;
+      height: 20px;
+      width: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &__slide {
+    height: 350px;
+
+    @include media-xl {
+      height: 485px;
+    }
+
+    &:hover {
+      .timeline__details {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
     img {
+      height: 350px !important;
       transition: $basic-transition;
+
+      @include media-xl {
+        height: 485px !important;
+      }
     }
 
     span {
@@ -23,15 +137,47 @@
     }
 
     &--1 {
-      width: 735px;
+      width: 530px;
+
+      @include media-xl {
+        width: 735px;
+      }
     }
 
     &--2 {
-      width: 535px;
+      width: 385px;
+
+      @include media-xl {
+        width: 535px;
+      }
     }
 
     &--3 {
-      width: 800px;
+      width: 575px;
+
+      @include media-xl {
+        width: 800px;
+      }
+    }
+
+    &--4 {
+      img {
+        width: 575px !important;
+
+        @include media-xl {
+          width: 700px !important;
+        }
+      }
+    }
+  }
+
+  &__slide-wrap {
+    &--4 {
+      max-width: 575px;
+
+      @include media-xl {
+        max-width: 700px;
+      }
     }
   }
 }

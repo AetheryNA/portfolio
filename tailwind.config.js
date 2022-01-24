@@ -8,6 +8,7 @@ module.exports = {
         100: '#4E4E4E',
         500: '#000',
       },
+      grey: '#B4B4B4',
       white: '#fff',
     },
     screens: {
