@@ -1,5 +1,10 @@
 body {
+  padding-top: 82px;
   overflow-x: hidden;
+
+  @include media-md {
+    padding-top: 97px;
+  }
 }
 
 .container {
