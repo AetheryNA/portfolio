@@ -2,11 +2,11 @@ import LinkedIn from '../../public/icons/linkedin.svg'
 import Github from '../../public/icons/github.svg'
 import {MailIcon} from '@heroicons/react/solid'
 
-const Footer = () => {
+const ReachMe = () => {
   return (
-    <footer className="footer hidden md:block">
+    <footer className="reach-me hidden md:block">
       <div className="container">
-        <div className="footer__wrapper flex flex-row max-w-max ml-auto">
+        <div className="reach-me__wrapper flex flex-row max-w-max ml-auto">
           <h3 className="mr-16"> Reach out to me </h3>
           <a href="mailto:mrnaaw98@gmail.com" target="_blank" rel="noreferrer">
             <MailIcon />
@@ -23,4 +23,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default ReachMe

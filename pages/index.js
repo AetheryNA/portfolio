@@ -1,4 +1,4 @@
-import Footer from "../src/components/Footer"
+import ReachMe from "../src/components/ReachMe"
 import IntroTitle from "../src/components/IntroTitle"
 import AboutCard from "../src/components/AboutCard"
 import Timeline from "../src/components/Timeline"
@@ -13,12 +13,13 @@ export default function Home() {
           <AboutCard />
           <Timeline />
         </div>
+        <ReachMe />
       </div>
+      
       <div className="portfolio-main__wrapper pt-4 md:hidden">
         <IntroTitle title={'I build things on the Web.'} />
         <Slideshow />
       </div>
-      <Footer />
     </>
   )
 }
