@@ -46,6 +46,7 @@
   .swiper-pagintion {
     bottom: 0;
     position: absolute;
+    z-index: 9;
   }
 
   .swiper-pagination-bullet {
