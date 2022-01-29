@@ -4,7 +4,7 @@ import {MailIcon} from '@heroicons/react/solid'
 
 const ReachMe = () => {
   return (
-    <footer className="reach-me hidden md:block">
+    <div className="reach-me hidden md:block">
       <div className="container">
         <div className="reach-me__wrapper flex flex-row max-w-max ml-auto">
           <h3 className="mr-16"> Reach out to me </h3>
@@ -19,7 +19,7 @@ const ReachMe = () => {
           </a>
         </div>
       </div>
-    </footer>
+    </div>
   )
 }
 
