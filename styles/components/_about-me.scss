@@ -15,16 +15,14 @@
         display: block;
         height: 2px;
         width: 12%;
-        transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        transition: width 2s cubic-bezier(0.25, 1, 0.5, 1);
 
         @include media-md {
           width: 19%;
         }
       }
-    }
 
-    &:hover {
-      h2 {
+      &.in-view-underline {
         &:after {
           width: 100%;
         }

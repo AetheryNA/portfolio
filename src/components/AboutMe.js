@@ -31,7 +31,7 @@ const AboutMe = () => {
     <section id="about-me" className={`about-me h-screen flex flex-col mt-10 md:flex-row md:mt-44 ${inView ? 'in-view' : ''}`} ref={ref} >
       <div className="container container--small flex flex-col md:flex-row items-center">
         <div className="about-me__left flex flex-col md:w-5/12">
-          <h2 className="text-sm md:text-2xl font-semibold relative">about me</h2>
+          <h2 className={`${inView ? 'in-view-underline' : ''} text-sm md:text-2xl font-semibold relative`}>about me</h2>
           <p className="mt-2.5 relative about-me__para-1">
             Hello! My name is Naveed Ahamed and I love building things for the internet. Throughout my journey of being a full stack developer, I've yearned to learn more things in the field! Along with my current knowledge, I'm eager to dip my fingers into something a lot more adventurous.
           </p>
