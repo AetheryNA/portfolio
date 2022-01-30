@@ -3,6 +3,7 @@ import IntroTitle from "../src/components/IntroTitle"
 import AboutCard from "../src/components/AboutCard"
 import Timeline from "../src/components/Timeline"
 import Slideshow from "../src/components/Slideshow"
+import AboutMe from "../src/components/AboutMe"
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
         <IntroTitle title={'I build things on the Web.'} />
         <Slideshow />
       </div>
+
+      <AboutMe />
     </>
   )
 }

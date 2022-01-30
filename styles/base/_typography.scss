@@ -28,3 +28,21 @@ h3 {
     font-size: 16px;
   }
 }
+
+p {
+  font-family: $roboto;
+  font-size: 14px;
+
+  @include media-md {
+    font-size: 16px;
+  }
+}
+
+a {
+  color: $primary;
+  transition: $basic-transition;
+
+  &:hover {
+    color: $primary-dark;
+  }
+}

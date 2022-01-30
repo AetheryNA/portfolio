@@ -8,6 +8,10 @@
     a {
       margin-right: 10px;
 
+      svg {
+        color: $black-100;
+      }
+
       &:last-child {
         margin-right: 0;
       }
