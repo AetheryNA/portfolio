@@ -4,10 +4,12 @@ import AboutCard from "../src/components/AboutCard"
 import Timeline from "../src/components/Timeline"
 import Slideshow from "../src/components/Slideshow"
 import AboutMe from "../src/components/AboutMe"
+import BackToTop from "../src/components/BackToTop"
 
 export default function Home() {
   return (
     <>
+      <BackToTop />
       <div className="container overflow-visible">
         <div className="portfolio-main__wrapper pt-4 md:grid hidden relative">
           <IntroTitle title={'I build things on the Web.'} />
