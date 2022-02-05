@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const base = ({ children }) => {
   return (
@@ -12,6 +13,7 @@ const base = ({ children }) => {
       <main className='portfolio-main'>
         <Header />
         { children }
+        <Footer />
       </main>
     </>
   )
