@@ -29,7 +29,7 @@ const AboutMe = () => {
   ]
 
   return (
-    <section id="about-me" className={`about-me h-screen flex flex-col mt-10 md:flex-row md:mt-44 ${inView ? 'in-view' : ''}`} ref={ref} >
+    <section id="about-me" className={`mb-20 md:mb-32 about-me h-screen flex flex-col mt-10 md:flex-row md:mt-44 ${inView ? 'in-view' : ''}`} ref={ref} >
       <div className="container container--small flex flex-col md:flex-row items-center">
         <div className="about-me__left flex flex-col md:w-5/12">
           <h2 className={`${inView ? 'in-view-underline' : ''} text-sm md:text-2xl font-semibold relative`}>about me</h2>
