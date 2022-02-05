@@ -49,7 +49,7 @@ const AboutMe = () => {
           </ul>
         </div>
         <div className="about-me__right flex flex-col w-full mt-12 md:mt-0 md:w-4/12 md:ml-auto md:mr-8">
-          <div className="about-me__right-wrap block w-3/5 md:w-full relative">
+          <div className="about-me__right-wrap block w-2/5 md:w-full relative">
             <Image src="/images/aboutme.jpg" width={700} height={1000} layout='responsive' alt="about-me-pic" />
           </div>
         </div>
