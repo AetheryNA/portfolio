@@ -4,7 +4,7 @@ import {MailIcon} from '@heroicons/react/solid'
 
 const Footer = () => {
   return (
-    <footer className="footer pt-9 pb-6 mt-20 md:mt-32">
+    <footer className="footer pt-9 pb-6">
       <div className="container">
         <div className="footer__wrap relative flex flex-col justify-center items-center">
           <div className="footer__svg-block flex flex-row absolute justify-between items-center w-full">
