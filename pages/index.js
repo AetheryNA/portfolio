@@ -5,6 +5,7 @@ import Timeline from "../src/components/Timeline"
 import Slideshow from "../src/components/Slideshow"
 import AboutMe from "../src/components/AboutMe"
 import BackToTop from "../src/components/BackToTop"
+import Info from "../src/components/Info"
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       </div>
 
       <AboutMe />
+      <Info />
     </>
   )
 }
