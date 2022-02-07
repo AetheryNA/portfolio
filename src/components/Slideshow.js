@@ -26,7 +26,7 @@ const Slideshow = () => {
         <SwiperSlide className='slideshow__slide slideshow__slide--2 cursor-pointer my-auto'>
           <Link href='/'>
             <>
-              <Image src={'https://picsum.photos/168/275'} width={310} height={200} className='slideshow__slide-img rounded-xl object-cover' />
+              <Image src={'https://picsum.photos/168/275'} alt="slide-2" width={310} height={200} className='slideshow__slide-img rounded-xl object-cover' />
               <div className="slideshow__details"></div>
             </>
           </Link>
@@ -34,7 +34,7 @@ const Slideshow = () => {
         <SwiperSlide className='slideshow__slide slideshow__slide--3 cursor-pointer my-auto'>
           <Link href='/'>
             <>
-              <Image src={'https://picsum.photos/168/275'} width={310} height={200} className='slideshow__slide-img rounded-xl object-cover' />
+              <Image src={'https://picsum.photos/168/275'} alt="slide-3" width={310} height={200} className='slideshow__slide-img rounded-xl object-cover' />
               <div className="slideshow__details"></div>
             </>
           </Link>

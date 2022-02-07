@@ -24,7 +24,7 @@ const Timeline = () => {
           <Link href='/'>
             <>
               <div className="timeline__slide-wrap timeline__slide-wrap--1 relative">
-                <Image src={'https://picsum.photos/735/485'} width={735} height={485} className='rounded-xl object-cover' />
+                <Image src={'https://picsum.photos/735/485'} alt="slide-1" width={735} height={485} className='rounded-xl object-cover' />
                 <div className="timeline__details absolute left-5 bottom-5">
                   <h2> MyPower.LK</h2>
                 </div>
@@ -44,7 +44,7 @@ const Timeline = () => {
           <Link href='/'>
             <>
               <div className="timeline__slide-wrap timeline__slide-wrap--2 relative">
-                <Image src={'https://picsum.photos/535/485'} width={535} height={485} className='rounded-xl object-cover' />
+                <Image src={'https://picsum.photos/535/485'} alt="slide-2" width={535} height={485} className='rounded-xl object-cover' />
               </div>
             </>
           </Link>
@@ -54,7 +54,7 @@ const Timeline = () => {
           <Link href='/'>
             <>
               <div className="timeline__slide-wrap timeline__slide-wrap--3 relative">
-                <Image src={'https://picsum.photos/800/485'} width={800} height={485} className='rounded-xl object-cover' />
+                <Image src={'https://picsum.photos/800/485'} alt="slide-3" width={800} height={485} className='rounded-xl object-cover' />
               </div>
             </>
           </Link>
@@ -64,7 +64,7 @@ const Timeline = () => {
           <Link href='/'>
             <>
               <div className="timeline__slide-wrap timeline__slide-wrap--4 relative">
-                <Image src={'https://picsum.photos/1085/485'} width={1085} height={485} className='rounded-xl object-cover' />
+                <Image src={'https://picsum.photos/1085/485'} alt="slide-4" width={1085} height={485} className='rounded-xl object-cover' />
                 <div className="timeline__details absolute">
                   <p className='text-white'> Hello world </p>
                 </div>
