@@ -11,11 +11,17 @@
   }
 
   &__svg {
+    transition: $basic-transition;
+
     svg {
       margin: 0 auto;
       color: $white;
       height: 100%;
       width: 20px;
+    }
+
+    &:hover {
+      background-color: $primary-dark;
     }
 
     &--linked-in {
