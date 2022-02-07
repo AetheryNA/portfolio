@@ -1,0 +1,24 @@
+.info {
+  &__wrap {
+    &:after {
+      background-color: $primary;
+      bottom: -7px;
+      content: '';
+      height: 3px;
+      position: absolute;
+      transition: 0.8s ease;
+    }
+
+    &.hide-line {
+      &:after {
+        width: 0;
+      }
+    }
+
+    &.show-line {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
