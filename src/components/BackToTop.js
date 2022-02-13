@@ -40,7 +40,7 @@ const BackToTop = () => {
 
   return (
     <div 
-      className="back-to-top fixed right-5 bottom-5 md:right-10 md:bottom-10 w-12 h-12 text-white bg-black-100 rounded-full p-1.5 cursor-pointer opacity-0"
+      className="back-to-top fixed right-5 bottom-5 md:right-10 md:bottom-10 w-12 h-12 text-white bg-black-100 rounded-full p-1.5 cursor-pointer opacity-0 z-10"
       onClick={scrollToTop}  
     >
       <Rocket />
