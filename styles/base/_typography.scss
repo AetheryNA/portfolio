@@ -31,6 +31,10 @@ h3 {
 
 p {
   font-family: $roboto;
+}
+
+li,
+p {
   font-size: 14px;
 
   @include media-md {

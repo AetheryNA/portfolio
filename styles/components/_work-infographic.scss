@@ -1,0 +1,158 @@
+.work-infographic {
+  margin-bottom: 160px;
+
+  &__title {
+    &:after {
+      background-color: $primary;
+      bottom: -5px;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &__card {
+    margin-bottom: 80px;
+    
+    @include media-md {
+      margin-bottom: 20%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--right {
+      .work-infographic__left {
+        order: 1;
+      }
+
+      .work-infographic__right {
+        order: 2;
+      }
+    }
+
+    &--left {
+      .work-infographic__left {
+        order: 2;
+      }
+
+      .work-infographic__right {
+        margin-left: unset;
+        margin-right: auto;
+        order: 1;
+      }
+    }
+
+    @include media-lg {
+      padding-left: 100px;
+    }
+  }
+
+  &__left {
+    p,
+    li {
+      font-family: $raleway;
+    }
+
+    h2 {
+      &:after {
+        background-color: $primary;
+        bottom: -5px;
+        content: '';
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+
+      span {
+        margin-left: 46px;
+      }
+    }
+
+    p {
+      margin-bottom: 25px;
+      line-height: 24px;
+
+      @include media-md {
+        margin-bottom: 40px;
+      }
+    }
+
+    li {
+      margin-bottom: 15px;
+
+      &:last-child {
+        @include media-md {
+          margin-bottom: 0;
+        }
+      }
+
+      span {
+        background-color: $primary;
+        height: 10px;
+        width: 10px;
+      }
+    }
+  }
+
+  &__image {
+    svg {
+      bottom: 10px;
+      color: $white;
+      height: 30px;
+      position: absolute;
+      right: 30px;
+      transition: $basic-transition;
+      width: 30px;
+    }
+
+    &:hover {
+      img {
+        filter: blur(5px);
+      }
+
+      svg {
+        transform: scale(1.2)
+      }
+    }
+
+    span {
+      @include box-shadow;
+    }
+
+    img,
+    span {
+      border-radius: 10px;
+      transition: $basic-transition;
+    }
+
+    &:after,
+    &:before {
+      background-color: $primary;
+      content: '';
+      height: 100%;
+      position: absolute;
+    }
+
+    &:before {
+      border-bottom-right-radius: 7px;
+      border-top-right-radius: 7px;
+      right: 0;
+      width: 2%;
+      z-index: 1;
+    }
+
+    &:after {
+      border-radius: 10px;
+      bottom: -20px;
+      opacity: .6;
+      right: -20px;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}
