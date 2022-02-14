@@ -53,7 +53,7 @@ const WorkInfographic = () => {
   return (
     <section className="work-infographic">
       <div className="container">
-        <h2 className="work-infographic__title font-semibold mb-16 md:mb-20 relative max-w-max">Stuff I've Built</h2>
+        <h2 className="work-infographic__title font-semibold mb-16 md:mb-20 relative max-w-max">Stuff I&apos;ve Built</h2>
         {work_info.map((work_item, index) => (
           <article key={index} className={`work-infographic__card work-infographic__card--${work_item.position} flex flex-col md:flex-row items-center`}>
             <div className="work-infographic__left md:w-2/6">
