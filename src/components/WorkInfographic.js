@@ -1,8 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useInView } from 'react-intersection-observer';
 import {ExternalLinkIcon} from '@heroicons/react/outline'
 
 const WorkInfographic = () => {
+  const {ref, inView} = useInView({
+    threshold: .5,
+  })
+
   const work_info = [
     {
       position: 'right',
@@ -55,7 +60,7 @@ const WorkInfographic = () => {
       <div className="container">
         <h2 className="work-infographic__title font-semibold mb-16 md:mb-20 relative max-w-max">Stuff I&apos;ve Built</h2>
         {work_info.map((work_item, index) => (
-          <article key={index} className={`work-infographic__card work-infographic__card--${work_item.position} flex flex-col md:flex-row items-center`}>
+          <article ref={ref} key={index} className={`work-infographic__card work-infographic__card--${work_item.position} flex flex-col md:flex-row items-center ${inView ? 'work-infographic__slide-in-' + work_item.position : ''}`}>
             <div className="work-infographic__left md:w-2/6">
               <h2 className="flex flex-row items-center font-semibold uppercase mb-5 relative max-w-max">{work_item.title}<span className="font-normal text-xs text-grey">{work_item.date}</span></h2>
               <p>{work_item.desc}</p>
