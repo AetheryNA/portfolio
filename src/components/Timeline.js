@@ -4,10 +4,13 @@ import Link from 'next/link';
 import { Pagination } from 'swiper'
 import NextIcon from '../../public/icons/nextjs.svg'
 import ReactIcon from '../../public/icons/react.svg'
+import { useRouter } from 'next/router'
 
 import 'swiper/css/pagination';
 
 const Timeline = () => {
+  const { push } = useRouter()
+
   return (
     <div className="timeline ml-5">
       <Swiper
@@ -21,9 +24,9 @@ const Timeline = () => {
       >
         <SwiperSlide className='timeline__slide timeline__slide--1 cursor-pointer'>
           <div className='timeline__line timeline__line--first text-sm text-grey absolute flex flex-row justify-between w-full'>my work <span>2020-2021</span></div>
-          <Link href='/'>
+          <Link href='#care'>
             <>
-              <div className="timeline__slide-wrap timeline__slide-wrap--1 relative">
+              <div className="timeline__slide-wrap timeline__slide-wrap--1 relative" onClick={() => {push('#care')}}>
                 <Image src={'https://picsum.photos/735/485'} alt="slide-1" width={735} height={485} className='rounded-xl object-cover' />
                 <div className="timeline__details absolute left-5 bottom-5">
                   <h2> MyPower.LK</h2>

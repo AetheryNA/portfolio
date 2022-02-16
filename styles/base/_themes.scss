@@ -1,0 +1,53 @@
+.theme-orange {
+  .portfolio-item__left {
+    h2 {
+      &:after {
+        background-color: $orange;
+      }
+    }
+
+    li {
+      span {
+        background-color: $orange;
+      }
+    }
+  }
+
+  .portfolio-item__image {
+    svg {
+      color: $orange;
+    }
+
+    &:after,
+    &:before {
+      background-color: $orange;
+    }
+  }
+}
+
+.theme-red {
+  .portfolio-item__left {
+    h2 {
+      &:after {
+        background-color: $red;
+      }
+    }
+
+    li {
+      span {
+        background-color: $red;
+      }
+    }
+  }
+
+  .portfolio-item__image {
+    svg {
+      color: $red;
+    }
+
+    &:after,
+    &:before {
+      background-color: $red;
+    }
+  }
+}

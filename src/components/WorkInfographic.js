@@ -3,11 +3,13 @@ import PortfolioItem from './PortfolioItem'
 const WorkInfographic = () => {
   const work_info = [
     {
+      href: 'care',
+      theme: 'orange',
       position: 'right',
       title: 'MyPower.Lk',
       date: '2020-2021',
       desc: 'An e-commerce website built on NextJS and ExpressJS. It was a locally funded site built for the Sri Lankan E-Commerce sector and was headed by MyPower.Lk',
-      image: 'http://picsum.photos/2000',
+      image: '/images/care.png',
       link: 'http://google.com',
       achievements: [
         {
@@ -25,6 +27,8 @@ const WorkInfographic = () => {
       ]
     },
     {
+      href:'wbr',
+      theme: 'red',
       position: 'left',
       title: 'MyPower.Lk',
       date: '2020-2021',
