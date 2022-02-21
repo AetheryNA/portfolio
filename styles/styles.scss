@@ -11,6 +11,7 @@
 @import "./base/animations";
 @import "./base/typography";
 @import "./base/buttons";
+@import "./base/themes";
 
 // Mixins
 @import "./mixins/mixins";
@@ -33,3 +34,4 @@
 @import "./components/back-to-top";
 @import "./components/info";
 @import "./components/work-infographic";
+@import "./components/portfolio-item";

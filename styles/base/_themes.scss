@@ -1,0 +1,107 @@
+.theme-orange {
+  .portfolio-item__left {
+    h2 {
+      &:after {
+        background-color: $orange;
+      }
+    }
+
+    li {
+      span {
+        background-color: $orange;
+      }
+    }
+  }
+
+  .portfolio-item__image {
+    svg {
+      color: $orange;
+    }
+
+    &:after,
+    &:before {
+      background-color: $orange;
+    }
+  }
+}
+
+.theme-red {
+  .portfolio-item__left {
+    h2 {
+      &:after {
+        background-color: $red;
+      }
+    }
+
+    li {
+      span {
+        background-color: $red;
+      }
+    }
+  }
+
+  .portfolio-item__image {
+    svg {
+      color: $red;
+    }
+
+    &:after,
+    &:before {
+      background-color: $red;
+    }
+  }
+}
+
+.theme-purple {
+  .portfolio-item__left {
+    h2 {
+      &:after {
+        background-color: $purple;
+      }
+    }
+
+    li {
+      span {
+        background-color: $purple;
+      }
+    }
+  }
+
+  .portfolio-item__image {
+    svg {
+      color: $purple;
+    }
+
+    &:after,
+    &:before {
+      background-color: $purple;
+    }
+  }
+}
+
+.theme-black {
+  .portfolio-item__left {
+    h2 {
+      &:after {
+        background-color: $black-100;
+      }
+    }
+
+    li {
+      span {
+        background-color: $black-100;
+      }
+    }
+  }
+
+  .portfolio-item__image {
+    svg {
+      color: $black-100;
+    }
+
+    &:after,
+    &:before {
+      background-color: $black-100;
+    }
+  }
+}
