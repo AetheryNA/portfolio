@@ -51,3 +51,57 @@
     }
   }
 }
+
+.theme-purple {
+  .portfolio-item__left {
+    h2 {
+      &:after {
+        background-color: $purple;
+      }
+    }
+
+    li {
+      span {
+        background-color: $purple;
+      }
+    }
+  }
+
+  .portfolio-item__image {
+    svg {
+      color: $purple;
+    }
+
+    &:after,
+    &:before {
+      background-color: $purple;
+    }
+  }
+}
+
+.theme-black {
+  .portfolio-item__left {
+    h2 {
+      &:after {
+        background-color: $black-100;
+      }
+    }
+
+    li {
+      span {
+        background-color: $black-100;
+      }
+    }
+  }
+
+  .portfolio-item__image {
+    svg {
+      color: $black-100;
+    }
+
+    &:after,
+    &:before {
+      background-color: $black-100;
+    }
+  }
+}
