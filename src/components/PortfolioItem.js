@@ -31,7 +31,7 @@ const PortfolioItem = ({ work_details }) => {
         </ul>
       </div>
       <div className="portfolio-item__right w-full md:w-1/2 md:ml-auto">
-        <Link href="https://google.com">
+        <Link href={work_details.link}>
           <div className="portfolio-item__image relative">
             <Image src={work_details.image} width={580} height={350} layout='responsive' />
             <ExternalLinkIcon />
