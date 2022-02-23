@@ -144,6 +144,12 @@
 
     span {
       border-radius: 8px;
+
+      &:after {
+        content: '';
+        opacity: 0;
+        transition: $basic-transition;
+      }
     }
 
     &:hover {
@@ -156,11 +162,12 @@
         
         &:after {
           background: linear-gradient(180deg, rgba(252,99,99,0) 0%, rgba(0,0,0,0.5494572829131652) 90%);
-          content: '';
-          position: absolute;
           bottom: 0;
-          width: 100%;
+          content: '';
           height: 50px;
+          opacity: 1;
+          position: absolute;
+          width: 100%;
         }
       }
     }
