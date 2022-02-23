@@ -3,6 +3,7 @@ import PortfolioItem from './PortfolioItem'
 const WorkInfographic = () => {
   const work_info = [
     {
+      completed: true,
       href: 'care',
       theme: 'orange',
       position: 'right',
@@ -24,6 +25,7 @@ const WorkInfographic = () => {
       ]
     },
     {
+      completed: true,
       href:'wbr',
       theme: 'red',
       position: 'left',
@@ -39,13 +41,14 @@ const WorkInfographic = () => {
       ]
     },
     {
+      completed: false,
       href:'mypower',
       theme: 'purple',
       position: 'right',
       title: 'MyPower.Lk',
-      date: '2020-2021',
+      date: 'SEPT-FEB',
       desc: 'An e-commerce website built on NextJS and ExpressJS. It was a locally funded site built for the Sri Lankan E-Commerce sector and was headed by MyPower.Lk',
-      image: 'http://picsum.photos/2000',
+      image: '/images/mypower.png',
       link: '/',
       achievements: [
         {
@@ -63,6 +66,7 @@ const WorkInfographic = () => {
       ]
     },
     {
+      completed: true,
       href:'youlead',
       theme: 'orange',
       position: 'left',
@@ -81,6 +85,7 @@ const WorkInfographic = () => {
       ]
     },
     {
+      completed: true,
       href:'dxdy',
       theme: 'black',
       position: 'right',

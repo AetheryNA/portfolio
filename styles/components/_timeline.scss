@@ -61,10 +61,10 @@
     }
 
     &--last {
-      max-width: 575px;
+      max-width: 385px;
 
       @include media-xl {
-        max-width: 700px;
+        max-width: 535px;
       }
 
       &:after {
@@ -100,6 +100,16 @@
     }
   }
 
+  &__slide-wrap {
+    border-radius: 8px;
+    box-shadow: rgb(50 50 35 / 10%) 0px 0px 12px -2px, rgb(0 0 0 / 30%) 0px 2px 7px -3px;
+    height: 350px;
+    
+    @include media-xl {
+      height: 485px;
+    }
+  }
+
   &__slide {
     height: 350px;
 
@@ -112,10 +122,19 @@
         opacity: 1;
         visibility: visible;
       }
+
+      .timeline__line {
+        span {
+          &:after {
+            display: none;
+          }
+        }
+      }
     }
 
     img {
       height: 350px !important;
+      object-fit: cover;
       transition: $basic-transition;
 
       @include media-xl {
@@ -125,6 +144,12 @@
 
     span {
       border-radius: 8px;
+
+      &:after {
+        content: '';
+        opacity: 0;
+        transition: $basic-transition;
+      }
     }
 
     &:hover {
@@ -134,6 +159,16 @@
 
       span {
         border-radius: 8px;
+        
+        &:after {
+          background: linear-gradient(180deg, rgba(252,99,99,0) 0%, rgba(0,0,0,0.5494572829131652) 90%);
+          bottom: 0;
+          content: '';
+          height: 50px;
+          opacity: 1;
+          position: absolute;
+          width: 100%;
+        }
       }
     }
 
@@ -154,30 +189,38 @@
     }
 
     &--3 {
-      width: 575px;
+      width: 530px;
 
       @include media-xl {
-        width: 800px;
+        width: 735px;
       }
     }
 
     &--4 {
+      width: 575px;
+
+      @include media-xl {
+        width: 835px;
+      }
+    }
+
+    &--5 {
       img {
-        width: 575px !important;
+        width: 385px !important;
 
         @include media-xl {
-          width: 700px !important;
+          width: 535px !important;
         }
       }
     }
   }
 
   &__slide-wrap {
-    &--4 {
-      max-width: 575px;
+    &--5 {
+      max-width: 385px;
 
       @include media-xl {
-        max-width: 700px;
+        max-width: 535px;
       }
     }
   }
